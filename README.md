@@ -27,8 +27,8 @@ This project is a simple **Command-Line Interface (CLI)** application developed 
 ### Installation
 1.  **Clone the Repository:**
     ```bash
-    git clone [YOUR_REPOSITORY_URL]
-    cd [YOUR_PROJECT_FOLDER]
+    git clone https://github.com/kashyap10101/student_attendance_manager
+    cd Student_Attendance_Manager
     ```
 2.  No external libraries or packages are required.
 
