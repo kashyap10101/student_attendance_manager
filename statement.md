@@ -1,11 +1,11 @@
 # Project Statement: Student Attendance Manager
 
-## ❓ Problem Statement
+##  Problem Statement
 In educational settings, the traditional method of recording and managing daily student attendance (often using physical registers or simple spreadsheets) is highly susceptible to **human error**, is **time-consuming**, and makes real-time summarization difficult. There is a clear need for a simple, digital, and reliable system to efficiently log student presence and quickly provide accurate cumulative attendance data. [cite_start]This project addresses the problem of **manual inefficiency and data delay** in attendance tracking by designing a technical solution[cite: 11].
 
 ---
 
-## 🔬 Scope of the Project
+## Scope of the Project
 [cite_start]The scope defines the boundaries and limitations of the current implementation[cite: 100].
 
 ### Inclusions (What the project does)
@@ -22,7 +22,7 @@ In educational settings, the traditional method of recording and managing daily 
 
 ---
 
-## 🧑‍💻 Target Users
+##  Target Users
 [cite_start]The primary end-users for this application are individuals responsible for recording and monitoring student presence in a classroom setting[cite: 102]:
 
 * **Instructors/Teachers:** To quickly record and verify attendance at the beginning of a lecture.
@@ -31,7 +31,7 @@ In educational settings, the traditional method of recording and managing daily 
 
 ---
 
-## 🚀 High-Level Features
+##  High-Level Features
 [cite_start]These are the foundational capabilities of the system, designed to directly address the problem statement[cite: 103]:
 
 1.  **Student Registration:** The ability to add new student names to the attendance dictionary/database.
