@@ -35,7 +35,7 @@ This project is a simple **Command-Line Interface (CLI)** application developed 
 ### Running the Application
 1.  Execute the main Python script from your terminal:
     ```bash
-    python main_attendance.py  # Assuming your file is named main_attendance.py
+    python attendance_manager.py
     ```
 2.  The application will present a menu. Select options (1-4) to interact with the system.
 
