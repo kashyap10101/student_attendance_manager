@@ -5,17 +5,12 @@ The current manual method of tracking daily student attendance is inefficient, p
 
 ##  Scope of the Project
 The project is scoped as a **Command-Line Interface (CLI)** application focused on core attendance management.
-
-### Inclusions
 * Student enrollment and management.
 * Marking and tracking the cumulative count of days present.
 * Data persistence via local JSON file storage.
 * Displaying a summary report of attendance counts.
 
 ### Exclusions
-* Date-specific attendance logging.
-* User authentication or security features.
-* Graphical User Interface (GUI).
 
 ##  Target Users
 The primary users are **Instructors, Teachers, and Teaching Assistants** who require a quick and easy way to record student attendance for a class.
