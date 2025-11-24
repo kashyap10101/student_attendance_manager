@@ -1,7 +1,7 @@
-#  Student Attendance Tracker 
+#  Student Attendance Manager
 
 ## Project Title
-**PyAttend:** A Simple GUI-Based Student Attendance Tracker
+**PyAttend:** A Simple GUI-Based Student Attendance Manager
 
 ## Overview of the Project
 The PyAttend application is a desktop utility designed to efficiently manage and track student attendance records. Developed using **Python** and the **Tkinter** library for a user-friendly Graphical User Interface (GUI), this tool replaces tedious manual record-keeping with a simple, digital solution. It allows users (like educators or teaching assistants) to add students, mark them as present or absent for a session, and save the cumulative data securely using JSON serialization.
