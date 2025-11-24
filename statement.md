@@ -1,24 +1,35 @@
-# Project Statement
+#  Problem Statement & Project Scope
 
 ## Problem Statement
-In educational settings, maintaining accurate and current attendance records is a critical but often time-consuming administrative task. Relying on paper registers or complex spreadsheets can lead to manual errors, inconsistency, and difficulty in quickly summarizing student attendance metrics. The core problem addressed by this project is the **lack of a simple, dedicated, and persistent digital tool** for classroom-level attendance tracking that is easy to use and provides immediate summaries.
+Traditional methods of tracking student attendance, such as paper registers or generic spreadsheets, are inefficient and prone to administrative errors. These methods lack real-time visibility and make it difficult for educators to quickly generate an attendance summary. The need is for a **simple, dedicated, and durable desktop application** that centralizes attendance logging, ensures data integrity, and provides immediate cumulative attendance metrics.
 
 ## Scope of the Project
-This project, **PyAttend**, is scoped to be a **standalone, desktop-based GUI application** that manages and persists student attendance records locally.
-1.  Core attendance logging (Present/Absent counts).
-2.  Student user management (addition).
-3.  Data storage using local JSON files.
-4.  Real-time visualization of attendance totals.
+The **Student Attendance Manager (SAM)** project is defined as a standalone, desktop utility built on Python and Tkinter. The project's scope focuses on providing essential CRUD (Create, Read, Update, Delete) functionality for attendance data.
+
+### Functional Requirements Met by Scope:
+1.  **User Management Module:** Function to add new student records.
+2.  **Data Processing Module:** Functions to increment Present/Absent counts.
+3.  **Reporting/Analytics Module:** Visualization of cumulative Present and Absent totals in the main GUI.
+
+### Inclusions:
+* Local data persistence using JSON file storage.
+* Basic error handling for input and file operations.
+* Intuitive GUI for ease of use.
+
+### Exclusions (Future Scope):
+* Network/database integration (e.g., MySQL, PostgreSQL).
+* Time-stamping of individual attendance marks (only cumulative count is maintained).
+* Complex report generation (e.g., monthly attendance percentages).
 
 ## Target Users
-The primary target users for the PyAttend application are:
-1.  **Educators/Teachers:** Who need a fast, simple way to log attendance for a class during a session.
-2.  **Teaching Assistants (TAs):** Responsible for maintaining daily records in labs or tutorials.
-3.  **Students (as personal tools):** For tracking their own project hours or small group participation.
+The primary beneficiaries and target users of the Student Attendance Manager are:
+1.  **Teachers and Professors:** Who require a straightforward, digital register for quickly marking attendance during class sessions.
+2.  **Teaching Assistants (TAs):** Responsible for tracking attendance in labs, practicals, or discussion groups.
+3.  **Small Group Coordinators:** Who need an easy way to manage participation metrics for project teams or clubs.
 
 ## High-Level Features
-The system provides the following capabilities:
-1.  **Student Registration (Add):** Allows the user to quickly input and register a new student name.
-2.  **Session Marking (Mark):** Provides a simple interface to select a student and increment either their **Present** count or **Absent** count.
-3.  **Data Visualization (View):** Displays the complete, up-to-date attendance summary for all registered students in an easy-to-read table.
-4.  **Persistent Storage (Save/Load):** Manages the entire data set, ensuring records are saved to disk before closing and loaded accurately upon startup.
+The application provides the following core capabilities to fulfill its objective:
+1.  **Registration:** The ability to add new student entries to the tracking system.
+2.  **Marking:** The ability to mark a registered student as either 'Present' or 'Absent' for one session.
+3.  **Viewing:** A real-time, tabulated view of all students and their current total Present and Absent counts.
+4.  **Serialization:** The capability to save the structured attendance data to a local file and load it back correctly upon application launch.
