@@ -10,8 +10,6 @@ The project is scoped as a **Command-Line Interface (CLI)** application focused 
 * Data persistence via local JSON file storage.
 * Displaying a summary report of attendance counts.
 
-### Exclusions
-
 ##  Target Users
 The primary users are **Instructors, Teachers, and Teaching Assistants** who require a quick and easy way to record student attendance for a class.
 
