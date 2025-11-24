@@ -1,20 +1,20 @@
-#  Student Attendance Manager
+#  Student Attendance Manager (SAM)
 
 ## Project Title
-**PyAttend:** A Simple GUI-Based Student Attendance Manager
+**Student Attendance Manager (SAM):** A Simple, Desktop GUI Application
 
 ## Overview of the Project
-The PyAttend application is a desktop utility designed to efficiently manage and track student attendance records. Developed using **Python** and the **Tkinter** library for a user-friendly Graphical User Interface (GUI), this tool replaces tedious manual record-keeping with a simple, digital solution. It allows users (like educators or teaching assistants) to add students, mark them as present or absent for a session, and save the cumulative data securely using JSON serialization.
+The **Student Attendance Manager (SAM)** is a utility designed for educators and administrators to efficiently manage and track student attendance records. Developed using **Python** and the **Tkinter** library, this application provides a user-friendly Graphical User Interface (GUI) that replaces manual attendance logs. It allows users to register students, mark their presence or absence for a session, and securely persist the cumulative attendance data using local JSON file storage.
 
 ## Key Features (High-Level)
-* **CRUD Operations:** Seamlessly **Add** new student records, **Read** (view) the current attendance status, and **Update** (mark present/absent) records.
-* **Persistent Storage:** Records are automatically loaded upon startup and saved to a local `attendance.json` file, ensuring data integrity across sessions.
-* **Intuitive GUI:** Uses standard Tkinter widgets (Buttons, Combo-boxes, Treeview Table) for easy navigation.
-* **Detailed Summary:** Displays a real-time table showing the total count of days a student was marked **Present** and **Absent**.
+* **User Management (Add):** Quickly register new student names into the system.
+* **Session Tracking (Mark):** Mark individual students as either **Present** or **Absent** for a session, updating their cumulative counts.
+* **Data Persistence (Load/Save):** Automatically loads records on startup and securely saves all attendance data to an `attendance.json` file.
+* **Real-time Summary:** Displays an immediate, sortable table (Treeview) showing each student's name, total days **Present**, and total days **Absent**.
 
 ##  Technologies & Tools Used
 * **Primary Language:** Python 3.x
-* **GUI Library:** `tkinter` and `tkinter.ttk`
+* **GUI Library:** `tkinter` and `tkinter.ttk` (Standard Python libraries)
 * **Data Persistence:** `json` module for File I/O (JSON serialization/deserialization)
 * **Version Control:** Git
 
@@ -24,34 +24,34 @@ This project requires a standard Python 3 environment.
 
 ### Prerequisites
 1.  Ensure you have **Python 3.x** installed.
-2.  Tkinter is typically included with standard Python installations, so no external libraries are usually required.
+2.  `tkinter` is typically included with standard Python installations.
 
 ### Running the Application
 1.  **Clone the Repository:**
     ```bash
-    git clone https://github.com/kashyap10101/student_attendance_manager
-    cd Student_Attendance_Manager
+    git clone [YOUR_REPOSITORY_LINK]
+    cd [YOUR_REPOSITORY_NAME]
     ```
 2.  **Execute the Script:**
     ```bash
-    python attendance_manager.py 
+    python your_main_script_name.py
     ```
-    *Note: The first time you run the script, it will automatically create an empty `attendance.json` file.*
+    *Note: The script will automatically create the `attendance.json` file in the same directory upon its first execution if it doesn't already exist.*
 
 ##  Instructions for Testing
-To confirm the application is working correctly, follow these basic test cases:
+To confirm the application is fully functional, perform the following validation tests:
 
-1.  **Data Persistence Test:**
-    * Click the **Add** button and add a new student (e.g., "Kashyap").
-    * Mark this student **Present** twice using the **Mark** button.
-    * Click **Save** or exit the application and choose **Save**.
-    * Rerun the script. The table should correctly display "Kashyap" with a Present count of 2.
-2.  **Marking Test:**
-    * Add a new student (e.g., "Rohit").
-    * Use the **Mark** function to mark Rohit **Absent**.
-    * The student's entry in the table should show Present: 0 and Absent: 1.
-3.  **Error Handling Test:**
-    * Attempt to add a student name that already exists (e.g., "Kashyap"). The application should show the **"Already got that one"** warning message and not duplicate the entry.
-4.  **Save/Exit Prompt Test:**
-    * Make an unsaved change (e.g., mark a student present).
-    * Attempt to close the main window using the standard "X" button. The application must prompt you with the **"Save first?"** dialog box.
+1.  **Student Registration Test:**
+    * Click the **Add** button and input "Priya".
+    * Verify "Priya" appears in the main table with Present: 0 and Absent: 0.
+2.  **Marking Functionality Test:**
+    * Use the **Mark** button. Select "Priya".
+    * Mark "Priya" as **Present**. The table must update instantly to Present: 1.
+    * Use the **Mark** button again. Select "Priya".
+    * Mark "Priya" as **Absent**. The table must update instantly to Absent: 1.
+3.  **Data Persistence Test (Crucial):**
+    * Click the **Save** button (or exit and choose 'Save').
+    * Close the application and restart it.
+    * The table must load with "Priya" showing Present: 1 and Absent: 1.
+4.  **Error Handling Test:**
+    * Try adding a student whose name is already present (e.g., "Priya"). The system must show a warning message ("Already got that one") and prevent duplication.
