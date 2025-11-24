@@ -1,4 +1,4 @@
-#  Student Attendance Tracker (PyAttend)
+#  Student Attendance Tracker 
 
 ## Project Title
 **PyAttend:** A Simple GUI-Based Student Attendance Tracker
@@ -12,13 +12,13 @@ The PyAttend application is a desktop utility designed to efficiently manage and
 * **Intuitive GUI:** Uses standard Tkinter widgets (Buttons, Combo-boxes, Treeview Table) for easy navigation.
 * **Detailed Summary:** Displays a real-time table showing the total count of days a student was marked **Present** and **Absent**.
 
-## 🛠️ Technologies & Tools Used
+##  Technologies & Tools Used
 * **Primary Language:** Python 3.x
 * **GUI Library:** `tkinter` and `tkinter.ttk`
 * **Data Persistence:** `json` module for File I/O (JSON serialization/deserialization)
 * **Version Control:** Git
 
-## ⚙️ Steps to Install & Run the Project
+##  Steps to Install & Run the Project
 
 This project requires a standard Python 3 environment.
 
